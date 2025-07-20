@@ -74,133 +74,46 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="max-w-4xl mx-auto">
           {/* Contact Information */}
           <div className="space-y-8 animate-slide-in">
-            <div>
+            <div className="text-center">
               <h3 className="font-cultural text-2xl font-semibold text-primary mb-6">
                 Get In Touch
               </h3>
-              <p className="font-elegant text-foreground leading-relaxed mb-8">
+              <p className="font-elegant text-foreground leading-relaxed mb-8 max-w-2xl mx-auto">
                 We're here to help you start your artistic journey. Whether you have questions about our courses, 
                 want to schedule a trial class, or need more information about our programs, don't hesitate to reach out.
               </p>
             </div>
 
             {/* Contact Info Cards */}
-            <div className="grid sm:grid-cols-2 gap-6">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {contactInfo.map((info, index) => (
                 <Card 
                   key={index}
                   className="bg-cultural-cream/50 border-cultural-gold/20 hover:shadow-lg transition-all duration-300"
                 >
-                  <CardContent className="p-6">
-                    <div className="flex items-start space-x-3">
-                      <div className="text-cultural-gold mt-1">
-                        {info.icon}
-                      </div>
-                      <div className="flex-1">
-                        <h4 className="font-cultural text-lg font-semibold text-primary mb-2">
-                          {info.title}
-                        </h4>
-                        {info.details.map((detail, idx) => (
-                          <p key={idx} className="font-elegant text-sm text-foreground mb-1">
-                            {detail}
-                          </p>
-                        ))}
-                        <p className="font-elegant text-xs text-muted-foreground mt-2">
-                          {info.description}
-                        </p>
-                      </div>
+                  <CardContent className="p-6 text-center">
+                    <div className="text-cultural-gold mb-4 flex justify-center">
+                      {info.icon}
                     </div>
+                    <h4 className="font-cultural text-lg font-semibold text-primary mb-3">
+                      {info.title}
+                    </h4>
+                    {info.details.map((detail, idx) => (
+                      <p key={idx} className="font-elegant text-sm text-foreground mb-1">
+                        {detail}
+                      </p>
+                    ))}
+                    <p className="font-elegant text-xs text-muted-foreground mt-3">
+                      {info.description}
+                    </p>
                   </CardContent>
                 </Card>
               ))}
             </div>
           </div>
-
-          {/* Contact Form */}
-          <Card className="bg-cultural-cream/30 border-cultural-gold/20 animate-fade-in">
-            <CardHeader>
-              <CardTitle className="font-cultural text-2xl text-primary">
-                Send Us a Message
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="name" className="font-elegant text-foreground">
-                      Full Name *
-                    </Label>
-                    <Input
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      required
-                      className="bg-background border-cultural-gold/30 focus:border-cultural-gold"
-                      placeholder="Your full name"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="phone" className="font-elegant text-foreground">
-                      Phone Number
-                    </Label>
-                    <Input
-                      id="phone"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleInputChange}
-                      className="bg-background border-cultural-gold/30 focus:border-cultural-gold"
-                      placeholder="Your phone number"
-                    />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="email" className="font-elegant text-foreground">
-                    Email Address *
-                  </Label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    required
-                    className="bg-background border-cultural-gold/30 focus:border-cultural-gold"
-                    placeholder="your.email@example.com"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="message" className="font-elegant text-foreground">
-                    Message *
-                  </Label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    required
-                    rows={5}
-                    className="bg-background border-cultural-gold/30 focus:border-cultural-gold resize-none"
-                    placeholder="Tell us about your interest in our courses or any questions you have..."
-                  />
-                </div>
-
-                <Button 
-                  type="submit"
-                  size="lg"
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-elegant"
-                >
-                  <Send className="mr-2 h-4 w-4" />
-                  Send Message
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </section>
