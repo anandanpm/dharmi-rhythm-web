@@ -29,7 +29,7 @@ const Footer = () => {
             <ul className="space-y-2 font-elegant text-sm">
               <li><a href="#about" className="hover:text-cultural-gold transition-colors duration-300">About Us</a></li>
               <li><a href="#courses" className="hover:text-cultural-gold transition-colors duration-300">Courses</a></li>
-              <li><a href="#gallery" className="hover:text-cultural-gold transition-colors duration-300">Gallery</a></li>
+              {/* <li><a href="#gallery" className="hover:text-cultural-gold transition-colors duration-300">Gallery</a></li> */}
               <li><a href="#contact" className="hover:text-cultural-gold transition-colors duration-300">Contact</a></li>
               <li><a href="#contact" className="hover:text-cultural-gold transition-colors duration-300">Admissions</a></li>
             </ul>
@@ -43,11 +43,11 @@ const Footer = () => {
             <div className="space-y-2 font-elegant text-sm">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-cultural-gold" />
-                <span>+91 98765 43210</span>
+                <span>+91 9778720906</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-cultural-gold" />
-                <span>info@dharmiacademy.com</span>
+                <span>dharmi.academy1@gmail.com</span>
               </div>
             </div>
 
@@ -56,7 +56,7 @@ const Footer = () => {
               <p className="font-elegant text-sm font-medium">Follow Us:</p>
               <div className="flex space-x-4">
                 <a 
-                  href="#" 
+                  href="https://www.instagram.com/dharmi_academy?utm_source=qr&igsh=dDJuaTcxMDJkYTlw " 
                   className="hover:text-cultural-gold transition-colors duration-300"
                   aria-label="Instagram"
                 >

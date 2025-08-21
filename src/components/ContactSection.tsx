@@ -38,19 +38,19 @@ const ContactSection = () => {
     {
       icon: <Phone className="h-5 w-5" />,
       title: "Phone",
-      details: ["+91 98765 43210", "+91 87654 32109"],
+      details: ["+91 9778720906", "+91 7907024157"],
       description: "Call us during academy hours"
     },
     {
       icon: <Mail className="h-5 w-5" />,
       title: "Email",
-      details: ["info@dharmiacademy.com", "admissions@dharmiacademy.com"],
+      details: ["dharmi.academy1@gmail.com"],
       description: "Send us your queries anytime"
     },
     {
       icon: <MapPin className="h-5 w-5" />,
       title: "Address",
-      details: ["123 Cultural Street", "Arts District, Music City", "India - 560001"],
+      details: ['Hill view. House No:10 Near JTS, Manjeri'],
       description: "Visit our beautiful academy"
     },
     {

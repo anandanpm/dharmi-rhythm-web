@@ -37,7 +37,51 @@ const CoursesSection = () => {
         "Concert performance"
       ],
       color: "bg-cultural-beige"
-    }
+    },
+    {
+  id: 3,
+  title: "Instrument Training",
+  description: "Learn to play a wide range of musical instruments with proper techniques, theory, and performance guidance.",
+  duration: "3-12 months depending on instrument and level",
+  students: "5-10 per batch",
+  level: "Beginner to Advanced",
+  highlights: [
+    "Instrument basics & posture",
+    "Finger techniques & scales",
+    "Music reading & theory",
+    "Solo and group performances",
+    "Stage performance training"
+  ],
+  instruments: [
+   'Keyboard',
+    "Violin",
+    "Flute",
+     "etc...."
+  ],
+  color: "bg-musical-blue"
+},
+{
+  id: 4,
+  title: "More Instrument Courses",
+  description: "A wide variety of new musical instrument training programs are on the way. Stay tuned for exciting additions to our curriculum!",
+  duration: "Varies depending on instrument",
+  students: "5-12 per batch",
+  level: "Beginner to Advanced",
+  highlights: [
+    "Fresh new instruments coming soon",
+    "Expert trainers for each instrument",
+    "Expanded music theory sessions",
+    "Solo & group performance practice",
+    "Special workshops and masterclasses"
+  ],
+  instruments: [
+    "More instruments... (Coming Soon)"
+  ],
+  note: "Many more instruments will be introduced gradually!",
+  color: "bg-musical-purple"
+}
+
+
   ];
 
   return (
