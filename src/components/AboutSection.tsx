@@ -3,7 +3,7 @@ import { Users, Award, Heart, Music } from "lucide-react";
 
 const AboutSection = () => {
   return (
-    <section className="py-20 px-4 bg-gradient-cultural">
+    <section id="about" className="py-20 px-4 bg-gradient-cultural">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">

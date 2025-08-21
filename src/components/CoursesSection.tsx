@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Clock, Users, Star, ArrowRight } from "lucide-react";
+import { link } from "fs";
 
 const CoursesSection = () => {
   const courses = [
@@ -40,7 +41,7 @@ const CoursesSection = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-background">
+    <section  id="courses" className="py-20 px-4 bg-background">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
@@ -112,7 +113,7 @@ const CoursesSection = () => {
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-elegant"
                   size="lg"
                 >
-                  Enroll Now
+                  Contact Now
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </CardContent>
@@ -126,17 +127,9 @@ const CoursesSection = () => {
             Flexible Learning Options
           </h3>
           <p className="font-elegant text-foreground max-w-2xl mx-auto leading-relaxed mb-6">
-            We offer both group classes and individual sessions to accommodate different learning preferences. 
+            We offer both Online classes and Offline classes to accommodate different learning preferences. 
             Our curriculum is designed to progress systematically while allowing students to learn at their own pace.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-elegant">
-              View Schedule
-            </Button>
-            <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-elegant">
-              Contact for Details
-            </Button>
-          </div>
         </div>
       </div>
     </section>

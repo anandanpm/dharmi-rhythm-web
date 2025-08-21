@@ -31,8 +31,7 @@ const Footer = () => {
               <li><a href="#courses" className="hover:text-cultural-gold transition-colors duration-300">Courses</a></li>
               <li><a href="#gallery" className="hover:text-cultural-gold transition-colors duration-300">Gallery</a></li>
               <li><a href="#contact" className="hover:text-cultural-gold transition-colors duration-300">Contact</a></li>
-              <li><a href="#" className="hover:text-cultural-gold transition-colors duration-300">Admissions</a></li>
-              <li><a href="#" className="hover:text-cultural-gold transition-colors duration-300">Events</a></li>
+              <li><a href="#contact" className="hover:text-cultural-gold transition-colors duration-300">Admissions</a></li>
             </ul>
           </div>
 

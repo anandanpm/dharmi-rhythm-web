@@ -41,15 +41,28 @@ const HeroSection = () => {
         
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in">
-          <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-elegant px-8 py-3">
-            <Music className="mr-2 h-5 w-5" />
-            Explore Courses
-          </Button>
-          <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-elegant px-8 py-3">
-            <Heart className="mr-2 h-5 w-5" />
-            Learn More
-          </Button>
-        </div>
+  <a href="#courses" className="w-full sm:w-auto">
+    <Button 
+      size="lg" 
+      className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-primary-foreground font-elegant px-8 py-3"
+    >
+      <Music className="mr-2 h-5 w-5" />
+      Explore Courses
+    </Button>
+  </a>
+
+  <a href="#contact" className="w-full sm:w-auto">
+    <Button 
+      variant="outline" 
+      size="lg" 
+      className="w-full sm:w-auto border-primary text-primary hover:bg-primary hover:text-primary-foreground font-elegant px-8 py-3"
+    >
+      <Heart className="mr-2 h-5 w-5" />
+      Learn More
+    </Button>
+  </a>
+</div>
+
         
         {/* Floating Musical Notes */}
         <div className="absolute top-20 left-10 text-cultural-gold/30 text-2xl animate-bounce">♪</div>

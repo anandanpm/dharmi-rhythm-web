@@ -25,14 +25,6 @@ const GallerySection = () => {
       description: "Students practicing traditional dance forms",
       category: "Dance",
       date: "November 2024"
-    },
-    {
-      id: 3,
-      image: musicPerformance,
-      title: "Annual Concert",
-      description: "Students performing at our annual cultural event",
-      category: "Performance",
-      date: "October 2024"
     }
   ];
 
