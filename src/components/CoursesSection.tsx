@@ -153,6 +153,7 @@ const CoursesSection = () => {
                 </div>
 
                 {/* CTA Button */}
+                <a href="#contact" className="w-full sm:w-auto">
                 <Button 
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-elegant"
                   size="lg"
@@ -160,6 +161,7 @@ const CoursesSection = () => {
                   Contact Now
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
+                </a>
               </CardContent>
             </Card>
           ))}
