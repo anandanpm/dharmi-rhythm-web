@@ -44,14 +44,9 @@
     "clsx": "^2.1.1",
     "cmdk": "^1.0.0",
     "date-fns": "^3.6.0",
-<<<<<<< HEAD
     "embla-carousel": "^8.6.0",
     "embla-carousel-autoplay": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
-=======
-    "embla-carousel-autoplay": "^8.6.0",
-    "embla-carousel-react": "^8.3.0",
->>>>>>> b4f5e507d00037d77fbaa85757306019955ec6a0
     "input-otp": "^1.2.4",
     "lucide-react": "^0.462.0",
     "next-themes": "^0.3.0",
