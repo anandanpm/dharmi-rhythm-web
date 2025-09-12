@@ -637,13 +637,17 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { X, ZoomIn, Calendar, Users } from "lucide-react";
-// import instrumentsGallery from "@/assets/instruments-gallery.jpg";
-// import danceClass from "@/assets/dance-class.jpg";
-// import musicPerformance from "@/assets/music-performance.jpg";
 import inauguration1 from "@/assets/cutting.jpg";
 import inauguration2 from "@/assets/peoplesitting.jpg";
 import inauguration3 from "@/assets/vilakkukathikkal.jpg";
 import inauguration4 from "@/assets/vilakkukathikkal2.jpg";
+import inauguration5 from '@/assets/photo of lighting ceremony.jpg'
+import inauguration6 from '@/assets/giveflower.jpg'
+import inauguration7 from '@/assets/giveflower2.jpg'
+import inauguration8 from '@/assets/dance.jpg'
+import inauguration9 from '@/assets/group.jpg'
+import inauguration10 from '@/assets/singing.jpg'
+import inauguration11 from '@/assets/pacha.jpg'
 import Autoplay from "embla-carousel-autoplay";
 
 const GallerySection = () => {
@@ -663,18 +667,63 @@ const GallerySection = () => {
       title: "Inauguration Ceremony",
       description: "Official inauguration with traditional decorations"
     },
+
     {
       id: 3,
+      image: inauguration6,
+      title: 'bouquet presentation',
+      description: "Presenting a bouquet of flowers"
+    },
+    {
+      id: 4,
+      image: inauguration7,
+      title: 'bouquet presentation',
+      description: "Presenting a bouquet of flowers"
+    },
+    {
+      id: 5,
       image: inauguration3,
       title: "Lamp Lighting Ceremony",
       description: "Auspicious beginning with classical traditions"
     },
     {
-      id: 4,
+      id: 6,
       image: inauguration4,
       title: "Lamp Lighting Ceremony",
       description: "Traditional blessings for the academy"
-    }
+    },
+      {
+      id: 7,
+      image: inauguration5,
+      title: "Lamp Lighting Ceremony",
+      description: "Traditional blessings for the academy"
+    },
+    {
+  id: 8,
+  image: inauguration8,
+  title: " Dance Performance",
+  description: "A vibrant traditional dance showcasing our rich heritage"
+},
+{
+  id: 9,
+  image: inauguration10,
+  title: "Musical Performance",
+  description: "Melodious songs presented by talented performers"
+},
+{
+  id: 10,
+  image: inauguration11,
+  title: "Musical Performance",
+  description: "Melodious songs presented by talented performers"
+},
+{
+  id: 11,
+  image: inauguration9,
+  title: "Group Photo of Contributors",
+  description: "A special moment capturing the dedicated team who made the event possible"
+}
+      
+
   ];
 
   // COMMENTED OUT: Gallery Items Array
