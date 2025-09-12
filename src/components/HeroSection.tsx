@@ -76,9 +76,10 @@
 
 // export default HeroSection;
 
+
 import { Button } from "@/components/ui/button";
 import { Music, Heart } from "lucide-react";
-import heroVideo from "@/assets/WhatsApp Video 2025-09-07 at 23.39.04_abaff364.mp4"; // make sure your video file is inside src/assets
+import heroVideo from "@/assets/WhatsApp Video 2025-09-07 at 23.39.04_abaff364.mp4";
 
 const HeroSection = () => {
   return (
@@ -94,8 +95,8 @@ const HeroSection = () => {
         <source src={heroVideo} type="video/mp4" />
       </video>
 
-      {/* Overlay (lighter now) */}
-      <div className="absolute inset-0 bg-background/40" />
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-background/80" />
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
